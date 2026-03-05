@@ -1,45 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ASK's Physics Academy | Online & Offline Physics Coaching</title>
-
-<meta name="description" content="Physics Academy provides expert Physics coaching for Class X, XI, XII. Online and Offline classes available in Kaniyapuram. Free Demo Classes.">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
-
-body{
-line-height:1.6;
-background:#ffffff;
-color:#333;
-}
-
-/* HEADER */
+<title>ASK's Physics Academy</title>
+<meta name="description" content="ASK's Physics Academy - CBSE & State Board Physics Coaching for Class X, XI & XII"><style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#222}
 
 header{
-background:#0D2C6C;
-color:white;
-padding:15px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:15px 40px;
+background:#0b1a3a;
+color:white;
 }
 
-header h1{
-font-size:22px;
-}
+header h1{margin:0;font-size:22px}
 
 nav a{
 color:white;
@@ -48,281 +24,154 @@ text-decoration:none;
 font-weight:500;
 }
 
-/* HERO */
+nav a:hover{color:#f4b400}
 
-.hero{
-height:70vh;
-background:url('banner.jpg') center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
+.hero{position:relative;width:100%;overflow:hidden}
+
+.hero img{width:100%;height:auto;display:block}
+
+.hero-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
 text-align:center;
 color:white;
 }
 
-.hero h2{
-font-size:42px;
-}
+.hero-content h2{font-size:36px;margin-bottom:10px}
 
-.hero p{
-margin-top:10px;
-font-size:18px;
-}
+.hero-content p{font-size:18px}
 
 .hero button{
-margin-top:20px;
+margin-top:15px;
 padding:12px 25px;
 border:none;
-background:#F4B400;
+background:#f4b400;
 font-weight:600;
 cursor:pointer;
+border-radius:5px;
 }
 
-/* SECTION */
+section{padding:60px 40px}
 
-section{
-padding:60px 20px;
-max-width:1100px;
-margin:auto;
-}
+.section-title{text-align:center;margin-bottom:40px}
 
-.section-title{
-text-align:center;
-margin-bottom:40px;
-color:#0D2C6C;
-}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
 
-/* COURSES */
-
-.courses{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#f8f8f8;
+.feature-box{
+background:#f7f7f7;
 padding:25px;
 border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+text-align:center
 }
 
-.card h3{
-color:#1E4FA3;
-margin-bottom:10px;
+.courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+
+.course-box{
+border:1px solid #ddd;
+padding:25px;
+border-radius:8px;
+text-align:center
 }
 
-/* WHY */
+.contact{background:#f4f4f4}
 
-.why{
-background:#0D2C6C;
+.contact form{max-width:500px;margin:auto;display:flex;flex-direction:column}
+
+.contact input,.contact textarea{
+margin-bottom:15px;
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px
+}
+
+.contact button{
+padding:12px;
+border:none;
+background:#0b1a3a;
 color:white;
+font-weight:bold;
+border-radius:5px
 }
-
-.why ul{
-max-width:600px;
-margin:auto;
-}
-
-.why li{
-margin:10px 0;
-}
-
-/* CONTACT */
-
-.contact{
-text-align:center;
-}
-
-.contact p{
-margin:10px 0;
-}
-
-/* FOOTER */
 
 footer{
-background:#111;
+background:#0b1a3a;
 color:white;
 text-align:center;
-padding:20px;
+padding:20px
 }
-
-/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
-background:#25D366;
+background:#25d366;
 color:white;
-padding:14px 18px;
+padding:12px 18px;
 border-radius:50px;
 text-decoration:none;
-font-weight:600;
+font-weight:bold
 }
 
-</style>
+.map{width:100%;height:350px;border:0}
 
-</head>
+@media(max-width:768px){
 
-<body>
+header{flex-direction:column;text-align:center}
 
-<header>
+nav{margin-top:10px}
 
-<h1>ASK's Physics Academy</h1>
+.hero-content h2{font-size:24px}
 
-<nav>
+.hero-content p{font-size:15px}
+
+section{padding:40px 20px}
+
+}
+
+</style></head><body><header>
+<h1>ASK's Physics Academy</h1><nav>
 <a href="#">Home</a>
 <a href="#courses">Courses</a>
-<a href="#projects">Projects</a>
+<a href="#about">About</a>
 <a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<!-- HERO -->
-
-<div class="hero">
-
-<div>
-
-
-
-<button onclick="window.location.href='#contact'">
+</nav></header><div class="hero"><img src="banner.jpg" alt="Physics Academy Banner"><div class="hero-content">
+<h2>Where Questions Shape Knowledge</h2>
+<p>CBSE & State Board Physics Coaching</p><button onclick="document.getElementById('contact').scrollIntoView()">
 Book Free Demo
-</button>
+</button></div></div><section id="about"><div class="section-title">
+<h2>Why Choose ASK's Physics Academy</h2>
+</div><div class="features"><div class="feature-box">
+<h3>Concept Clarity</h3>
+<p>Strong focus on fundamental physics concepts</p>
+</div><div class="feature-box">
+<h3>Board Exam Focus</h3>
+<p>Special training for CBSE & State board exams</p>
+</div><div class="feature-box">
+<h3>Small Batches</h3>
+<p>Personal attention to every student</p>
+</div><div class="feature-box">
+<h3>Problem Solving</h3>
+<p>Numerical practice and exam strategies</p>
+</div></div></section><section id="courses"><div class="section-title">
+<h2>Courses Offered</h2>
+</div><div class="courses"><div class="course-box">
+<h3>Class X</h3>
+<p>Physics Foundation for Board Exams</p>
+</div><div class="course-box">
+<h3>Class XI</h3>
+<p>Concept Building + Numerical Practice</p>
+</div><div class="course-box">
+<h3>Class XII</h3>
+<p>Board Exam Oriented Coaching</p>
+</div></div></section><section class="contact" id="contact"><div class="section-title">
+<h2>Contact Us</h2>
+</div><form><input type="text" placeholder="Student Name" required><input type="tel" placeholder="Phone Number" required><textarea placeholder="Message"></textarea><button type="submit">Send Enquiry</button>
 
-</div>
-
-</div>
-
-<!-- ABOUT -->
-
-<section>
-
-<h2 class="section-title">About Physics Academy</h2>
-
-<p style="text-align:center">
-
-Physics Academy helps students build strong conceptual understanding and exam confidence.  
-We provide **online and classroom coaching** with small batch sizes and individual attention.
-
-</p>
-
-</section>
-
-<!-- COURSES -->
-
-<section id="courses">
-
-<h2 class="section-title">Courses Offered</h2>
-
-<div class="courses">
-
-<div class="card">
-<h3>Class XII Physics</h3>
-<p>Board exam and entrance focused coaching with numericals and derivations.</p>
-</div>
-
-<div class="card">
-<h3>Class XI Physics</h3>
-<p>Concept clarity and foundation for competitive exams.</p>
-</div>
-
-<div class="card">
-<h3>Class X Physics</h3>
-<p>Complete board syllabus coverage with exam preparation.</p>
-</div>
-
-<div class="card">
-<h3>Practical & Viva</h3>
-<p>Special support for Physics practical exams and viva preparation.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section id="projects">
-
-<h2 class="section-title">Academic Project Assistance</h2>
-
-<div class="courses">
-
-<div class="card">
-<h3>Plus Two Projects</h3>
-<p>Topic selection and full project preparation support.</p>
-</div>
-
-<div class="card">
-<h3>UG Projects</h3>
-<p>Guidance for undergraduate Physics project documentation.</p>
-</div>
-
-<div class="card">
-<h3>PG Projects</h3>
-<p>Advanced project mentoring and presentation guidance.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- WHY -->
-
-<section class="why">
-
-<h2 class="section-title">Why Choose Us</h2>
-
-<ul>
-
-<li>✔ Concept Oriented Teaching</li>
-<li>✔ Small Batch Size</li>
-<li>✔ Individual Attention</li>
-<li>✔ Regular Tests</li>
-<li>✔ Practical & Viva Guidance</li>
-<li>✔ Online + Offline Classes</li>
-
-</ul>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="contact">
-
-<h2 class="section-title">Contact Us</h2>
-
-<p>📍 Kaniyapuram, Trivandrum</p>
-
-<p>📞 8891560546</p>
-
-<p>Free Demo Classes Available</p>
-
-<br>
-
-<iframe
-src="https://maps.google.com/maps?q=kaniyapuram%20trivandrum&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="300"
-frameborder="0">
-</iframe>
-
-</section>
-
-<footer>
-
-<p>© 2026 Physics Academy</p>
-<p>Concept • Clarity • Confidence</p>
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/918891560546">
-WhatsApp
-</a>
+</form><br><iframe class="map"
+src="https://maps.google.com/maps?q=kaniyapuram&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe></section><footer><p>© 2026 ASK's Physics Academy | Kaniyapuram</p></footer><a class="whatsapp" href="https://wa.me/918891560546">WhatsApp</a>
 
 </body>
-
 </html>
