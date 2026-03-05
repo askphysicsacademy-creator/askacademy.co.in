@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,7 +7,7 @@
 
 <title>Physics Academy | Online & Offline Physics Coaching</title>
 
-<meta name="description" content="Physics coaching for Class X, XI, XII. Online and Offline classes in Kaniyapuram. Free demo classes available.">
+<meta name="description" content="Physics Academy provides expert Physics coaching for Class X, XI, XII. Online and Offline classes available in Kaniyapuram. Free Demo Classes.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -18,7 +17,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Poppins,sans-serif;
 }
 
 body{
@@ -46,59 +45,37 @@ nav a{
 color:white;
 margin-left:20px;
 text-decoration:none;
+font-weight:500;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
+height:70vh;
 background:url('banner.jpg') center/cover no-repeat;
-min-height:90vh;
 display:flex;
 align-items:center;
-padding:80px 10%;
+justify-content:center;
+text-align:center;
 color:white;
-}
-
-.hero-content{
-max-width:600px;
-background:rgba(0,0,0,0.45);
-padding:30px;
-border-radius:8px;
 }
 
 .hero h2{
 font-size:42px;
-margin-bottom:10px;
 }
 
-.tagline{
-font-size:20px;
-margin-bottom:25px;
-color:#FFD54F;
+.hero p{
+margin-top:10px;
+font-size:18px;
 }
 
-.hero-buttons{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.btn{
+.hero button{
+margin-top:20px;
 padding:12px 25px;
 border:none;
-cursor:pointer;
-font-weight:600;
-text-decoration:none;
-}
-
-.btn-demo{
 background:#F4B400;
-color:black;
-}
-
-.btn-call{
-background:white;
-color:#0D2C6C;
+font-weight:600;
+cursor:pointer;
 }
 
 /* SECTION */
@@ -119,15 +96,15 @@ color:#0D2C6C;
 
 .courses{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
 .card{
-background:#f7f7f7;
+background:#f8f8f8;
 padding:25px;
 border-radius:8px;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 .card h3{
@@ -135,7 +112,7 @@ color:#1E4FA3;
 margin-bottom:10px;
 }
 
-/* WHY SECTION */
+/* WHY */
 
 .why{
 background:#0D2C6C;
@@ -148,7 +125,7 @@ margin:auto;
 }
 
 .why li{
-margin:12px 0;
+margin:10px 0;
 }
 
 /* CONTACT */
@@ -170,7 +147,7 @@ text-align:center;
 padding:20px;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -184,29 +161,6 @@ text-decoration:none;
 font-weight:600;
 }
 
-/* MOBILE */
-
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-gap:10px;
-}
-
-.hero{
-padding:120px 20px 80px 20px;
-}
-
-.hero h2{
-font-size:32px;
-}
-
-.hero-content{
-padding:20px;
-}
-
-}
-
 </style>
 
 </head>
@@ -218,37 +172,31 @@ padding:20px;
 <h1>Physics Academy</h1>
 
 <nav>
-
 <a href="#">Home</a>
 <a href="#courses">Courses</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 </header>
 
 <!-- HERO -->
 
-<section class="hero">
+<div class="hero">
 
-<div class="hero-content">
+<div>
 
 <h2>Physics Academy</h2>
 
-<p class="tagline">Where Questions Shape Knowledge</p>
+<p>Where Questions Shape Knowledge</p>
 
-<div class="hero-buttons">
-
-<a href="#contact" class="btn btn-demo">Book Free Demo</a>
-
-<a href="tel:8891560546" class="btn btn-call">Call Now</a>
+<button onclick="window.location.href='#contact'">
+Book Free Demo
+</button>
 
 </div>
 
 </div>
-
-</section>
 
 <!-- ABOUT -->
 
@@ -258,9 +206,8 @@ padding:20px;
 
 <p style="text-align:center">
 
-Physics Academy focuses on concept clarity and exam success.  
-Small batches ensure individual attention.  
-Online and Offline classes available.
+Physics Academy helps students build strong conceptual understanding and exam confidence.  
+We provide **online and classroom coaching** with small batch sizes and individual attention.
 
 </p>
 
@@ -275,50 +222,50 @@ Online and Offline classes available.
 <div class="courses">
 
 <div class="card">
-<h3>Physics – Class XII</h3>
-<p>Board + Entrance focused preparation with numericals and derivations.</p>
+<h3>Class XII Physics</h3>
+<p>Board exam and entrance focused coaching with numericals and derivations.</p>
 </div>
 
 <div class="card">
-<h3>Class XII Practical & Viva</h3>
-<p>Special training for Physics practical exams and viva questions.</p>
+<h3>Class XI Physics</h3>
+<p>Concept clarity and foundation for competitive exams.</p>
 </div>
 
 <div class="card">
-<h3>Physics – Class XI</h3>
-<p>Concept clarity and numerical problem solving foundation.</p>
+<h3>Class X Physics</h3>
+<p>Complete board syllabus coverage with exam preparation.</p>
 </div>
 
 <div class="card">
-<h3>Physics – Class X</h3>
-<p>Board exam focused preparation with previous questions discussion.</p>
+<h3>Practical & Viva</h3>
+<p>Special support for Physics practical exams and viva preparation.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- PROJECT SUPPORT -->
+<!-- PROJECTS -->
 
 <section id="projects">
 
-<h2 class="section-title">Project Assistance</h2>
+<h2 class="section-title">Academic Project Assistance</h2>
 
 <div class="courses">
 
 <div class="card">
 <h3>Plus Two Projects</h3>
-<p>Complete support for Physics project preparation and presentation.</p>
+<p>Topic selection and full project preparation support.</p>
 </div>
 
 <div class="card">
-<h3>UG Physics Projects</h3>
-<p>Topic selection and documentation guidance.</p>
+<h3>UG Projects</h3>
+<p>Guidance for undergraduate Physics project documentation.</p>
 </div>
 
 <div class="card">
-<h3>PG Physics Projects</h3>
-<p>Advanced research guidance and mentoring.</p>
+<h3>PG Projects</h3>
+<p>Advanced project mentoring and presentation guidance.</p>
 </div>
 
 </div>
@@ -329,7 +276,7 @@ Online and Offline classes available.
 
 <section class="why">
 
-<h2 class="section-title">Why Choose Physics Academy</h2>
+<h2 class="section-title">Why Choose Us</h2>
 
 <ul>
 
