@@ -1,211 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Physics Academy | Online & Offline Classes</title>
+
+<title>Physics Academy | Online & Offline Physics Coaching</title>
+
+<meta name="description" content="Physics Academy provides expert Physics coaching for Class X, XI, XII. Online and Offline classes available in Kaniyapuram. Free Demo Classes.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', Arial, sans-serif;
-        background-color: #f4f6f9;
-        color: #333;
-    }
 
-    header {
-        background: linear-gradient(135deg, #0D2C6C, #1e4fa3);
-        color: white;
-        padding: 40px 20px;
-        text-align: center;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
 
-    header img {
-        width: 120px;
-        margin-bottom: 15px;
-    }
+body{
+line-height:1.6;
+background:#ffffff;
+color:#333;
+}
 
-    h1 {
-        margin: 10px 0;
-        font-size: 36px;
-    }
+/* HEADER */
 
-    .tagline {
-        font-size: 20px;
-        color: #F4B400;
-        margin-bottom: 10px;
-    }
+header{
+background:#0D2C6C;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-    .subtext {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
+header h1{
+font-size:22px;
+}
 
-    .btn {
-        display: inline-block;
-        padding: 12px 25px;
-        margin: 10px 5px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-    }
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
 
-    .btn-primary {
-        background-color: #F4B400;
-        color: #000;
-    }
+/* HERO */
 
-    .btn-secondary {
-        background-color: white;
-        color: #0D2C6C;
-    }
+.hero{
+height:70vh;
+background:url('banner.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
 
-    section {
-        padding: 50px 20px;
-        text-align: center;
-    }
+.hero h2{
+font-size:42px;
+}
 
-    .section-title {
-        font-size: 28px;
-        margin-bottom: 30px;
-        color: #0D2C6C;
-    }
+.hero p{
+margin-top:10px;
+font-size:18px;
+}
 
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#F4B400;
+font-weight:600;
+cursor:pointer;
+}
 
-    .card {
-        background: white;
-        padding: 25px;
-        width: 300px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+/* SECTION */
 
-    .highlight-section {
-        background-color: #0D2C6C;
-        color: white;
-    }
+section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
 
-    .highlight-section h2 {
-        color: #F4B400;
-    }
+.section-title{
+text-align:center;
+margin-bottom:40px;
+color:#0D2C6C;
+}
 
-    .cta {
-        background-color: #F4B400;
-        padding: 30px 20px;
-        font-size: 22px;
-        font-weight: bold;
-    }
+/* COURSES */
 
-    footer {
-        background-color: #111;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
+.courses{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
 
-    @media (max-width: 768px) {
-        .cards {
-            flex-direction: column;
-            align-items: center;
-        }
+.card{
+background:#f8f8f8;
+padding:25px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
 
-        h1 {
-            font-size: 28px;
-        }
-    }
+.card h3{
+color:#1E4FA3;
+margin-bottom:10px;
+}
+
+/* WHY */
+
+.why{
+background:#0D2C6C;
+color:white;
+}
+
+.why ul{
+max-width:600px;
+margin:auto;
+}
+
+.why li{
+margin:10px 0;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+}
+
 </style>
 
 </head>
+
 <body>
 
-<!-- HERO SECTION -->
 <header>
-   <img src="IMG-20260301-WA0006.jpg" alt="Physics Academy Logo">
-    <h1>PHYSICS ACADEMY</h1>
-    <div class="tagline">Where Questions Shape Knowledge</div>
-    <div class="subtext">Concept. Clarity. Confidence.</div>
 
-    <div class="subtext">
-        🎓 Online & Offline Classes Available <br>
-        Free Demo Classes | Admissions Open – Limited Seats
-    </div>
+<h1>Physics Academy</h1>
 
-    <a href="tel:8891560546" class="btn btn-primary">Call Now</a>
-    <a href="#contact" class="btn btn-secondary">Book Free Demo</a>
+<nav>
+<a href="#">Home</a>
+<a href="#courses">Courses</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
-<!-- ABOUT SECTION -->
+<!-- HERO -->
+
+<div class="hero">
+
+<div>
+
+<h2>Physics Academy</h2>
+
+<p>Where Questions Shape Knowledge</p>
+
+<button onclick="window.location.href='#contact'">
+Book Free Demo
+</button>
+
+</div>
+
+</div>
+
+<!-- ABOUT -->
+
 <section>
-    <h2 class="section-title">Why Physics Academy?</h2>
-    <p>
-        We provide both classroom coaching and live interactive online classes 
-        for students of Class IX to XII (CBSE & State Board).
-        Our focus is on strong conceptual understanding and numerical mastery.
-    </p>
+
+<h2 class="section-title">About Physics Academy</h2>
+
+<p style="text-align:center">
+
+Physics Academy helps students build strong conceptual understanding and exam confidence.  
+We provide **online and classroom coaching** with small batch sizes and individual attention.
+
+</p>
+
 </section>
 
-<!-- CORE OFFERINGS -->
-<section>
-    <h2 class="section-title">Core Offerings</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Comprehensive Coaching</h3>
-            <p>Class IX – XII (All Boards)<br>
-            Online & Offline Batches</p>
-        </div>
+<!-- COURSES -->
 
-        <div class="card">
-            <h3>Specialized Support</h3>
-            <p>Class XI & XII<br>
-            Practical & Viva Guidance<br>
-            Board + Entrance Focus</p>
-        </div>
+<section id="courses">
 
-        <div class="card">
-            <h3>Academic Projects</h3>
-            <p>Plus Two, UG & PG Assistance<br>
-            Online Guidance Available</p>
-        </div>
-    </div>
+<h2 class="section-title">Courses Offered</h2>
+
+<div class="courses">
+
+<div class="card">
+<h3>Class XII Physics</h3>
+<p>Board exam and entrance focused coaching with numericals and derivations.</p>
+</div>
+
+<div class="card">
+<h3>Class XI Physics</h3>
+<p>Concept clarity and foundation for competitive exams.</p>
+</div>
+
+<div class="card">
+<h3>Class X Physics</h3>
+<p>Complete board syllabus coverage with exam preparation.</p>
+</div>
+
+<div class="card">
+<h3>Practical & Viva</h3>
+<p>Special support for Physics practical exams and viva preparation.</p>
+</div>
+
+</div>
+
 </section>
 
-<!-- ONLINE & OFFLINE SECTION -->
-<section class="highlight-section">
-    <h2>Online & Offline Learning</h2>
-    <p>
-        ✔ Live Interactive Online Classes<br>
-        ✔ Small Offline Batches<br>
-        ✔ Regular Tests & Monitoring<br>
-        ✔ Individual Attention<br>
-        ✔ Safe & Focused Environment
-    </p>
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Academic Project Assistance</h2>
+
+<div class="courses">
+
+<div class="card">
+<h3>Plus Two Projects</h3>
+<p>Topic selection and full project preparation support.</p>
+</div>
+
+<div class="card">
+<h3>UG Projects</h3>
+<p>Guidance for undergraduate Physics project documentation.</p>
+</div>
+
+<div class="card">
+<h3>PG Projects</h3>
+<p>Advanced project mentoring and presentation guidance.</p>
+</div>
+
+</div>
+
 </section>
 
-<!-- CTA SECTION -->
-<section class="cta">
-    Free Demo Classes Available – Register Today!
+<!-- WHY -->
+
+<section class="why">
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<ul>
+
+<li>✔ Concept Oriented Teaching</li>
+<li>✔ Small Batch Size</li>
+<li>✔ Individual Attention</li>
+<li>✔ Regular Tests</li>
+<li>✔ Practical & Viva Guidance</li>
+<li>✔ Online + Offline Classes</li>
+
+</ul>
+
 </section>
 
-<!-- CONTACT SECTION -->
-<section id="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <p>
-        📍 Kaniyapuram, Trivandrum<br>
-        📞 8891560546<br>
-        Admissions Open Now
-    </p>
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p>📍 Kaniyapuram, Trivandrum</p>
+
+<p>📞 8891560546</p>
+
+<p>Free Demo Classes Available</p>
+
+<br>
+
+<iframe
+src="https://maps.google.com/maps?q=kaniyapuram%20trivandrum&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+frameborder="0">
+</iframe>
+
 </section>
 
-<!-- FOOTER -->
 <footer>
-    © 2026 Physics Academy | All Rights Reserved
+
+<p>© 2026 Physics Academy</p>
+<p>Concept • Clarity • Confidence</p>
+
 </footer>
 
+<a class="whatsapp" href="https://wa.me/918891560546">
+WhatsApp
+</a>
+
 </body>
+
 </html>
