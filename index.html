@@ -1,176 +1,313 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASK's Physics Academy | Online & Offline Physics Coaching</title>
-<meta name="description" content="ASK's Physics Academy provides expert Physics coaching for Class X, XI and XII students. Online and Offline classes available with concept oriented teaching and exam focused preparation.">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:#fff;color:#333;line-height:1.6}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASK's Physics Academy</title>
+    <meta name="description" content="ASK's Physics Academy - Building strong foundations in Physics through clear concepts, systematic problem solving, and regular assessment for Classes IX-XII.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="noise-overlay"></div>
 
-header{background:#0D2C6C;color:#fff;padding:15px 25px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-header h1{font-size:20px}
-nav a{color:#fff;margin-left:18px;text-decoration:none;font-weight:500}
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="Logo.png" alt="ASK's Physics Academy Logo" class="logo-img">
+                <span class="logo-text">ASK's Physics<br>Academy</span>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#features" class="nav-link">Why Choose Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-glow">Get Free Demo</a>
+                <button class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-.hero img{width:100%;height:auto;display:block}
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content fade-up">
+                    <div class="badge">Where Questions Shape Knowledge</div>
+                    <h1 class="hero-title">Master Physics with <span>Clarity & Confidence</span></h1>
+                    <p class="hero-description">
+                        Dedicated coaching for classes IX, X, XI, and XII. Online and offline batches available for CBSE and State Syllabus students aiming for board exam excellence and competitive entrance success.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#courses" class="btn btn-primary btn-glow btn-large">Explore Courses</a>
+                        <a href="#contact" class="btn btn-secondary btn-large">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper fade-up delay-1">
+                    <div class="glass-card hero-glass">
+                        <div class="physics-animation">
+                            <div class="atom">
+                                <div class="nucleus"></div>
+                                <div class="orbit orbit-1"><div class="electron"></div></div>
+                                <div class="orbit orbit-2"><div class="electron"></div></div>
+                                <div class="orbit orbit-3"><div class="electron"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-section{padding:60px 20px;max-width:1100px;margin:auto}
-.section-title{text-align:center;margin-bottom:40px;color:#0D2C6C}
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">About <span>Our Academy</span></h2>
+                    <p class="section-subtitle">Building strong foundations through dedicated teaching</p>
+                </div>
+                <div class="about-grid">
+                    <div class="glass-card about-card fade-up">
+                        <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Our Philosophy</h3>
+                        <p>We focus on simplifying difficult concepts, improving analytical thinking, and helping students score high marks in board and competitive examinations through systematic problem solving.</p>
+                    </div>
+                    <div class="glass-card about-card fade-up delay-1">
+                        <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3>Individual Attention</h3>
+                        <p>Small batch sizes allow individual attention so that every student can clarify doubts and build confidence in the subject, identifying weak areas for targeted improvement.</p>
+                    </div>
+                    <div class="glass-card about-card fade-up delay-2">
+                        <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Dual Modes</h3>
+                        <p>We provide both Online and Offline coaching, ensuring flexible and accessible learning for students across different locations while maintaining the same high teaching standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.about{text-align:center;font-size:17px}
+        <!-- Courses Section -->
+        <section id="courses" class="courses section">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Our <span>Courses</span></h2>
+                    <p class="section-subtitle">Comprehensive physics coaching from foundation to advanced levels</p>
+                </div>
+                
+                <div class="course-grid">
+                    <!-- Class XII -->
+                    <div class="glass-card course-card fade-up">
+                        <div class="course-badge">Board + Entrance</div>
+                        <h3 class="course-title">Class XII Physics</h3>
+                        <p class="course-desc">Comprehensive coaching covering the complete Plus Two Physics syllabus.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Complete syllabus coverage</li>
+                            <li><i class="fa-solid fa-check"></i> Important derivations & numericals</li>
+                            <li><i class="fa-solid fa-check"></i> Board & entrance oriented training</li>
+                            <li><i class="fa-solid fa-check"></i> Regular model examinations</li>
+                        </ul>
+                    </div>
 
-.courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-.card{background:#f7f7f7;padding:25px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-.card h3{color:#1E4FA3;margin-bottom:10px}
-.card ul{margin-top:10px;padding-left:18px}
-.card li{margin-bottom:6px}
+                    <!-- Class XI -->
+                    <div class="glass-card course-card fade-up delay-1">
+                        <div class="course-badge">Foundation + NEET/JEE</div>
+                        <h3 class="course-title">Class XI Physics</h3>
+                        <p class="course-desc">Strong conceptual foundation for higher secondary and competitive exams.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Fundamental concept explanation</li>
+                            <li><i class="fa-solid fa-check"></i> Step-by-step numerical solving</li>
+                            <li><i class="fa-solid fa-check"></i> Preparation for NEET/JEE basics</li>
+                            <li><i class="fa-solid fa-check"></i> Regular doubt clearing sessions</li>
+                        </ul>
+                    </div>
 
-.why{background:#0D2C6C;color:#fff}
-.why ul{max-width:650px;margin:auto;font-size:16px}
-.why li{margin:10px 0}
+                    <!-- Class X -->
+                    <div class="glass-card course-card fade-up delay-2">
+                        <div class="course-badge">Board Exam Focus</div>
+                        <h3 class="course-title">Class X Physics</h3>
+                        <p class="course-desc">Special coaching focused on helping score high marks in board exams.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Complete syllabus coverage</li>
+                            <li><i class="fa-solid fa-check"></i> Previous year question discussion</li>
+                            <li><i class="fa-solid fa-check"></i> Exam oriented notes & practice</li>
+                            <li><i class="fa-solid fa-check"></i> Individual attention for weak areas</li>
+                        </ul>
+                    </div>
 
-.contact{text-align:center}
-.contact form{max-width:400px;margin:20px auto;display:flex;flex-direction:column;gap:10px}
-.contact input,.contact textarea{padding:10px;border:1px solid #ccc;border-radius:4px}
-.contact button{padding:12px;background:#F4B400;border:none;font-weight:600;cursor:pointer}
+                    <!-- Class IX -->
+                    <div class="glass-card course-card fade-up">
+                        <div class="course-badge">Foundation Course</div>
+                        <h3 class="course-title">Class IX Physics</h3>
+                        <p class="course-desc">Introductory Physics coaching to build a strong base for higher classes.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Basic concepts explained clearly</li>
+                            <li><i class="fa-solid fa-check"></i> Simple numerical problem solving</li>
+                            <li><i class="fa-solid fa-check"></i> Foundation for Class X</li>
+                            <li><i class="fa-solid fa-check"></i> Enthusiastic scientific thinking</li>
+                        </ul>
+                    </div>
 
-footer{background:#111;color:#fff;text-align:center;padding:20px}
+                     <!-- Practical Training -->
+                     <div class="glass-card course-card fade-up delay-1">
+                        <div class="course-badge">Plus Two</div>
+                        <h3 class="course-title">Practical & Viva</h3>
+                        <p class="course-desc">Special guidance for students preparing for practical exams.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Lab experiment explanations</li>
+                            <li><i class="fa-solid fa-check"></i> Viva question preparation</li>
+                            <li><i class="fa-solid fa-check"></i> Record writing assistance</li>
+                            <li><i class="fa-solid fa-check"></i> Confidence building</li>
+                        </ul>
+                    </div>
 
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:600}
-</style></head><body><header>
-<h1>ASK's Physics Academy</h1>
-<nav>
-<a href="#">Home</a>
-<a href="#courses">Courses</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
-</header><div class="hero">
-<img src="banner~2.jpg" alt="ASK Physics Academy Banner">
-</div><section>
-<h2 class="section-title">About ASK's Physics Academy</h2>
-<p class="about">
-ASK's Physics Academy is dedicated to helping students build a strong foundation in Physics through clear concept explanation, systematic problem solving and regular assessment. We provide both <b>Online and Offline coaching</b> for students of Class IX, X, XI and XII following CBSE and State syllabus. Our teaching approach focuses on simplifying difficult concepts, improving analytical thinking and helping students score high marks in board examinations.
+                     <!-- Project Assistance -->
+                     <div class="glass-card course-card fade-up delay-2">
+                        <div class="course-badge">School & College</div>
+                        <h3 class="course-title">Project Assistance</h3>
+                        <p class="course-desc">Support for Plus Two, UG, and PG academic physics projects.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Topic selection guidance</li>
+                            <li><i class="fa-solid fa-check"></i> Full assistance in preparation</li>
+                            <li><i class="fa-solid fa-check"></i> Documentation & report prep</li>
+                            <li><i class="fa-solid fa-check"></i> Personal mentoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-Small batch sizes allow individual attention so that every student can clarify doubts and build confidence in the subject. Regular tests, revision sessions and exam oriented practice help students perform their best in board exams and competitive entrance examinations.
+        <!-- Features/Why Choose Us Section -->
+        <section id="features" class="features section">
+            <div class="container">
+                <div class="features-wrapper glass-card fade-up">
+                    <div class="features-content">
+                        <h2 class="section-title">Why Choose <span>ASK's</span></h2>
+                        <ul class="why-list">
+                            <li class="fade-up delay-1">
+                                <span class="bullet"><i class="fa-solid fa-brain"></i></span>
+                                <div>
+                                    <h4>Concept Oriented</h4>
+                                    <p>Teaching methodology focused on true understanding rather than memorization.</p>
+                                </div>
+                            </li>
+                            <li class="fade-up delay-2">
+                                <span class="bullet"><i class="fa-solid fa-clipboard-list"></i></span>
+                                <div>
+                                    <h4>Regular Evaluation</h4>
+                                    <p>Continuous assessment through regular tests and performance tracking.</p>
+                                </div>
+                            </li>
+                            <li class="fade-up delay-3">
+                                <span class="bullet"><i class="fa-solid fa-chalkboard-user"></i></span>
+                                <div>
+                                    <h4>Comprehensive Support</h4>
+                                    <p>Board exam focus plus practical and viva exam guidance.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</p>
-</section><section id="courses">
-<h2 class="section-title">Courses Offered</h2>
-<div class="courses"><div class="card">
-<h3>Physics – Class XII (Board + Entrance Focus)</h3>
-<p>Comprehensive coaching covering the complete Plus Two Physics syllabus with strong emphasis on conceptual clarity and exam preparation.</p>
-<ul>
-<li>Complete syllabus coverage</li>
-<li>Important derivations and numericals</li>
-<li>Board exam and entrance oriented training</li>
-<li>Regular model examinations</li>
-<li>Free demo classes available</li>
-<li>Special guidance for practical & viva</li>
-</ul>
-</div><div class="card">
-<h3>Physics – Class XI</h3>
-<p>Strong conceptual foundation for higher secondary Physics and preparation for competitive examinations.</p>
-<ul>
-<li>Clear explanation of fundamental concepts</li>
-<li>Step by step numerical problem solving</li>
-<li>Preparation for NEET / JEE basics</li>
-<li>Concept building for Class XII topics</li>
-<li>Regular assignments and doubt clearing</li>
-</ul>
-</div><div class="card">
-<h3>Physics – Class IX (Foundation Course)</h3>
-<p>Introductory Physics coaching designed to build a strong base for higher classes.</p>
-<ul>
-<li>Basic Physics concepts explained clearly</li>
-<li>Simple numerical problem solving</li>
-<li>Strong conceptual foundation for Class X</li>
-<li>Support for school exams and assignments</li>
-<li>Encourages scientific thinking and curiosity</li>
-</ul>
-</div><div class="card">
-<h3>Physics – Class X (Board Exam Focus)</h3>
-<p>Special coaching focused on helping students score high marks in the Class X board examination.</p>
-<ul>
-<li>Complete syllabus coverage</li>
-<li>Previous year question discussion</li>
-<li>Exam oriented notes and practice</li>
-<li>Regular tests and revision sessions</li>
-<li>Individual attention for weak areas</li>
-</ul>
-</div><div class="card">
-<h3>Practical & Viva Training (Plus Two)</h3>
-<p>Special guidance for students preparing for Physics practical examinations.</p>
-<ul>
-<li>Lab experiment explanations</li>
-<li>Viva question preparation</li>
-<li>Record writing assistance</li>
-<li>Confidence building for practical exams</li>
-</ul>
-</div></div>
-</section><section id="projects">
-<h2 class="section-title">Academic Project Assistance</h2>
-<div class="courses"><div class="card">
-<h3>Plus Two Physics Project Support</h3>
-<ul>
-<li>Guidance in selecting project topics</li>
-<li>Full assistance in project preparation</li>
-<li>Concept explanation for project topics</li>
-<li>Documentation and presentation support</li>
-</ul>
-</div><div class="card">
-<h3>UG Physics Project Assistance</h3>
-<ul>
-<li>Support for undergraduate physics projects</li>
-<li>Topic selection guidance</li>
-<li>Documentation and report preparation</li>
-<li>Explanation and presentation assistance</li>
-</ul>
-</div><div class="card">
-<h3>PG Physics Project Guidance</h3>
-<ul>
-<li>Advanced project mentoring</li>
-<li>Research topic guidance</li>
-<li>Project documentation support</li>
-<li>Personal mentoring for project completion</li>
-</ul>
-</div></div>
-</section><section class="why">
-<h2 class="section-title">Why Choose ASK's Physics Academy</h2>
-<ul>
-<li>Concept oriented teaching methodology</li>
-<li>Small batch sizes for individual attention</li>
-<li>Regular tests and performance evaluation</li>
-<li>Board exam focused preparation</li>
-<li>Practical and viva exam support</li>
-<li>Online and Offline class options</li>
-<li>Friendly learning environment for students</li>
-</ul>
-</section><section id="contact" class="contact">
-<h2 class="section-title">Contact Us</h2>
-<p><b>Location:</b> Kaniyapuram, Trivandrum</p>
-<p><b>Phone:</b> 8891560546</p>
-<p>Free Demo Classes Available</p><form onsubmit="sendWhatsApp(); return false;">
-<input type="text" id="name" placeholder="Student Name" required>
-<input type="tel" id="phone" placeholder="Phone Number" required>
-<textarea id="message" placeholder="Message"></textarea>
-<button type="submit">Send Enquiry via WhatsApp</button>
-</form><br><iframe src="https://maps.google.com/maps?q=kaniyapuram%20trivandrum&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0"></iframe></section><footer>
-<p>© 2026 ASK's Physics Academy</p>
-<p>Concept • Clarity • Confidence</p>
-</footer><a class="whatsapp" href="https://wa.me/918891560546">WhatsApp</a>
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Get In <span>Touch</span></h2>
+                    <p class="section-subtitle">Ready to start your journey? Contact us today for a free demo class.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="glass-card contact-info fade-up">
+                        <div class="contact-item">
+                            <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Kaniyapuram, Trivandrum</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:8891560546">8891560546</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-circle"><i class="fa-solid fa-gift"></i></div>
+                            <div>
+                                <h3>Special Offer</h3>
+                                <p class="highlight-text">Free Demo Classes Available!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card contact-form-container fade-up delay-1">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" required placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <select id="course" required>
+                                    <option value="" disabled selected>Select Class/Course</option>
+                                    <option value="XII">Class XII Physics</option>
+                                    <option value="XI">Class XI Physics</option>
+                                    <option value="X">Class X Physics</option>
+                                    <option value="IX">Class IX Physics</option>
+                                    <option value="Practicals">Practical & Viva</option>
+                                    <option value="Projects">Project Assistance</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" placeholder="Message (Optional)"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-glow w-100">Request Demo</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<script>
-function sendWhatsApp(){
-var name=document.getElementById("name").value;
-var phone=document.getElementById("phone").value;
-var message=document.getElementById("message").value;
-var url="https://wa.me/918891560546?text="
-+"Enquiry from ASK Physics Academy Website%0a"
-+"Name: "+name+"%0a"
-+"Phone: "+phone+"%0a"
-+"Message: "+message;
-window.open(url,'_blank');
-}
-</script></body>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="Logo.png" alt="Logo" class="footer-logo">
+                <p>ASK's Physics Academy</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ASK's Physics Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
