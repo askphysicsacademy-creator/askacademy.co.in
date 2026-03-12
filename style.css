@@ -520,6 +520,65 @@ span {
     font-size: 0.9rem;
 }
 
+/* Testimonials Section */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: var(--accent);
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    line-height: 1.8;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 1.5rem;
+}
+
+.student-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.student-info h4 {
+    margin: 0;
+    color: var(--accent);
+}
+
+.student-info span {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
 /* Contact Section */
 .contact-grid {
     display: grid;
@@ -575,6 +634,14 @@ span {
 .highlight-text {
     color: #4facfe !important;
     font-weight: 600;
+}
+
+.map-container {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .contact-form-container {
@@ -665,6 +732,40 @@ select option {
     width: 100%;
     color: var(--text-muted);
     font-size: 0.9rem;
+}
+
+/* Floating WhatsApp Button */
+.floating-wa {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s var(--spring);
+    animation: float-wa 3s ease-in-out infinite alternate;
+}
+
+.floating-wa:hover {
+    background-color: #128c7e;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 25px rgba(37, 211, 102, 0.6);
+}
+
+@keyframes float-wa {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 
 /* Animations */
